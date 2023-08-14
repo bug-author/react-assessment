@@ -1,7 +1,9 @@
 export interface RadioButtonProps {
   id: string;
   label: string;
+  name: string;
   checked: boolean;
+  value: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -14,8 +16,8 @@ const RadioButton = (props: RadioButtonProps) => (
     />
     <div
       className='
-        relative w-5 h-5 border-2 border-gray-300 rounded-full flex items-center justify-center 
-        peer-checked:bg-f06d36 cursor-pointer
+        relative w-5 h-5 border-2 border-gray-300 rounded-full 
+        peer-checked:bg-orangePrimary cursor-pointer flex items-center justify-center
       '
     >
       <svg
