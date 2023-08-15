@@ -36,3 +36,9 @@ export type TaxFormErrors = {
 export interface SubmitButtonProps {
   buttonText: string;
 }
+
+interface CategoryListProps {
+  selectedItems: number[];
+  setSelectedItems: React.Dispatch<React.SetStateAction<number[]>>;
+  setFieldValue: (field: string, value: any) => void;
+}

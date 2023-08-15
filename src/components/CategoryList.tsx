@@ -1,20 +1,15 @@
 import React from 'react';
 import Checkbox from './Checkbox';
-import { Item, OrganizedCategory } from '../types';
+import { Item, OrganizedCategory, CategoryListProps } from '../types';
 import items from '../constants/items';
 
-interface CategoryListProps {
-  selectedItems: number[];
-  setSelectedItems: React.Dispatch<React.SetStateAction<number[]>>;
-  setFieldValue: (field: string, value: any) => void;
-}
 
 const CategoryList: React.FC<CategoryListProps> = ({
   selectedItems,
   setSelectedItems,
   setFieldValue,
 }) => {
-  const organizedCategories: { name: string; items: Item[] }[] = [];
+  const organizedCategories: OrganizedCategory[] = [];
 
   items.forEach((item) => {
     const categoryName = item.category?.name || '';
