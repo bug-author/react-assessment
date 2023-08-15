@@ -32,3 +32,7 @@ export type TaxFormErrors = {
   name?: string;
   rate?: string;
 };
+
+export interface SubmitButtonProps {
+  buttonText: string;
+}

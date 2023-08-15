@@ -1,8 +1,5 @@
 import React from 'react';
-
-interface SubmitButtonProps {
-  buttonText: string;
-}
+import {SubmitButtonProps} from '../types';
 
 const SubmitButton: React.FC<SubmitButtonProps> = ({ buttonText }) => {
   return (

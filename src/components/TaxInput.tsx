@@ -1,15 +1,7 @@
 import React from 'react';
 import { FaPercent } from 'react-icons/fa';
 import { FormikTouched } from 'formik';
-import { TaxFormErrors, TaxFormValues } from '../types';
-
-interface TaxInputProps {
-  value: string;
-  rate: number;
-  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  errors: TaxFormErrors;
-  touched: FormikTouched<TaxFormValues>;
-}
+import { TaxFormErrors, TaxFormValues, TaxInputProps } from '../types';
 
 const TaxInput: React.FC<TaxInputProps> = ({
   value,
